@@ -9,7 +9,7 @@ const axios = require('axios');
 
 const countries = require("./countries.json");
 const url = 'https://api.covid19api.com/total/country/';
-const WAKE_COMMAND = '!cases';
+const WAKE_COMMAND = 'cases';
 
 client.on('message', async (msg) => {
 
@@ -27,7 +27,7 @@ client.on('message', async (msg) => {
     (
     { name: 'Wash your hands regularly', value: 'Wash Your hands atleast 25 to 30 times so that you can keep the covid away' },
     { name: 'wear a mask', value: 'wearing a mask can reduce the spread of covid. use a N-95 mask (preferable), which is 95% of Effecitive against the spread of covid'},
-    { name: 'Have a sanitizer all the time and use it properly', value:'Do as i say and you will survive this pandemic'}
+    { name: 'Carry a sanitizer all the time and use it properly', value:'Fallow these precautions to stay safe from this pandemic'}
     )
     .setURL('https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public')
     .setFooter('regards: covid bot');
@@ -50,7 +50,7 @@ client.on('message', async (msg) => {
     '\n :arrow_right: Drink Plenty of warm water '+
     '\n :arrow_right: If your feeling uneasy, better to consult a Doctor'+
     '\n :arrow_right: Get well soon,' )
-    .setFooter('Please,consult a Doctor before following the above recommendations')
+    .setFooter('Please, consult a Doctor before following the above recommendations')
 
 
 
@@ -84,13 +84,13 @@ client.on('message', async (msg) => {
     if(msg.content.includes('negative')||msg.content.includes('-ve')){
       msg.channel.send('i am glad to hear that your fine. stay safe, use these precautions',precautions)
     }else if(msg.content.includes('positive')||msg.content.includes('+ve')){
-      msg.channel.send('do you have other health issues like High BP, Low BP, kidney problem,diabetes, etc', prescriction)
+      msg.channel.send('do you have other health issues like High BP, Low BP, kidney problem, diabetes, etc', prescriction)
     }
 
-    if(msg.content.includes('!become donor')){
+    if(msg.content.includes('become donor')){
       msg.channel.send('https://forms.gle/HHPDZXW9perbaV6k8' +' fill this form if you are only cured from covid and want to  help others in need')
     }
-    else if(msg.content.includes('!need donors')){
+    else if(msg.content.includes('need donors')){
       msg.channel.send('https://forms.gle/griYMN2LKXpFDzry6' + ' fill this form if you or other person need plasma to help fight covid')
     }
     else if(msg.content.includes('!help')||msg.content.includes('!Help')||msg.content.includes('help')||msg.content.includes('Help')){
