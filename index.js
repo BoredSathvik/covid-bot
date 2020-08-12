@@ -118,7 +118,6 @@ client.on('message', async (msg) => {
       const covidData = payload.data.pop();
       msg.reply(`Confirmed: ${covidData.Confirmed}, Deaths: ${covidData.Deaths}, Recovered: ${covidData.Recovered}, Active: ${covidData.Active} `)
     }
-   
   }
 })
 
