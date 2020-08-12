@@ -95,7 +95,7 @@ client.on('message', async (msg) => {
     }
     else if(msg.content.includes('!help')||msg.content.includes('!Help')||msg.content.includes('help')||msg.content.includes('Help')){
       msg.channel.send(help)
-    }else if(msg.content.includes('!covid map')||msg.content.includes('!Covid map')){
+    }else if(msg.content.includes('covid map')||msg.content.includes('Covid map')){
       msg.channel.send(covid_map);
     }
 
