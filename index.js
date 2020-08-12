@@ -90,10 +90,10 @@ client.on('message', async (msg) => {
     if(msg.content.includes('become donor')){
       msg.channel.send('https://forms.gle/HHPDZXW9perbaV6k8' +' fill this form if you are only cured from covid and want to  help others in need')
     }
-    else if(msg.content.includes('need donors')){
+    else if(msg.content.includes('need donor')){
       msg.channel.send('https://forms.gle/griYMN2LKXpFDzry6' + ' fill this form if you or other person need plasma to help fight covid')
     }
-    else if(msg.content.includes('!help')||msg.content.includes('!Help')||msg.content.includes('help')||msg.content.includes('Help')){
+    else if(msg.content.includes('help')||msg.content.includes('!Help')||msg.content.includes('help')||msg.content.includes('Help')){
       msg.channel.send(help)
     }else if(msg.content.includes('covid map')||msg.content.includes('Covid map')){
       msg.channel.send(covid_map);
