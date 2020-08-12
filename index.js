@@ -75,7 +75,8 @@ client.on('message', async (msg) => {
     .setURL('https://bing.com/covid/local/india')
 
     if(msg.content.includes('hi')||msg.content.includes('hello')||msg.content.includes('Hi')||msg.content.includes('Hello')||msg.content.includes('Good')||msg.content.includes('good')){
-      msg.channel.send('Hello, How may i assist you '+'\nHave you done a covid test. If yes then is it positive or negative')
+      msg.channel.send('Hello, How may i assist you '+
+      '\nHave you done a covid test. If yes then is it positive or negative')
     }
 
 
