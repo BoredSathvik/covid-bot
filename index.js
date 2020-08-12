@@ -25,9 +25,9 @@ client.on('message', async (msg) => {
     .setTitle('Precautions to take')
     .addFields
     (
-    { name: 'Wash your hands regularly', value: 'Wash ur hands atleast 25 to 30 times so that u can keep the covid away' },
-    { name: 'wear a mask', value: 'with a mask we can reduce the spread of covid. use the N-95 mask which does 95% of removal '},
-    { name: 'Have a sanitizer all the time and use it properly', value:'Do as i say and u will survive this pandemic'}
+    { name: 'Wash your hands regularly', value: 'Wash Your hands atleast 25 to 30 times so that you can keep the covid away' },
+    { name: 'wear a mask', value: 'with a mask we can reduce the spread of covid. use a N-95 mask (Preferably) which does 95% of removal'},
+    { name: 'Have a sanitizer all the time and use it properly', value:'Do as i say and you will survive this pandemic'}
     )
     .setURL('https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public')
     .setFooter('regards: covid bot');
@@ -50,7 +50,7 @@ client.on('message', async (msg) => {
     '\n :arrow_right: Drink Plenty of warm water '+
     '\n :arrow_right: If your feeling uneasy, better to consult a Doctor'+
     '\n :arrow_right: Get well soon,' )
-    .setFooter('all the medicines writen by my mom')
+    .setFooter('Please,consult a Doctor before following the above recommendations')
 
 
 
@@ -62,9 +62,9 @@ client.on('message', async (msg) => {
     .setTitle('Help')
     .setDescription('1. if you are cured from covid and want to help some other people to get through it then type !become a donor' + 
     '\n 2. if you or someone is in need of a donor then type !need donors' +
-    '\n 3. if u want to check the number of cases in some country type !cases <Country> ex :- !cases south-america'+
-    '\n 4.if u want to find the map then type !covid map'+
-    '\n 5. u can read more news here - https://binged.it/30ITLXY'+
+    '\n 3. if you want to check the number of cases in some country type !cases <Country> ex :- !cases south-america'+
+    '\n 4.if you want to find the map then type !covid map'+
+    '\n 5.you can read more news here - https://binged.it/30ITLXY'+
     '\n 6. for gov guidelines - https://bit.ly/2DLoJpx'+
     '\n I am adding many features')
 
@@ -81,13 +81,13 @@ client.on('message', async (msg) => {
 
 
     if(msg.content.includes('negative')||msg.content.includes('-ve')){
-      msg.channel.send('i am glad to hear that ur fine. stay safe, use these precautions',precautions)
+      msg.channel.send('i am glad to hear that your fine. stay safe, use these precautions',precautions)
     }else if(msg.content.includes('positive')||msg.content.includes('+ve')){
-      msg.channel.send('do u have other health issues like High BP, Low BP, kidney problem,diabetes, etc', prescriction)
+      msg.channel.send('do you have other health issues like High BP, Low BP, kidney problem,diabetes, etc', prescriction)
     }
 
     if(msg.content.includes('!become donor')){
-      msg.channel.send('https://forms.gle/HHPDZXW9perbaV6k8' +' fill this form if u are only cured from covid and want to  help others in need')
+      msg.channel.send('https://forms.gle/HHPDZXW9perbaV6k8' +' fill this form if you are only cured from covid and want to  help others in need')
     }
     else if(msg.content.includes('!need donors')){
       msg.channel.send('https://forms.gle/griYMN2LKXpFDzry6' + ' fill this form if you or other person need plasma to help fight covid')
