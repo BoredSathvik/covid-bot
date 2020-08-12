@@ -26,7 +26,7 @@ client.on('message', async (msg) => {
     .addFields
     (
     { name: 'Wash your hands regularly', value: 'Wash Your hands atleast 25 to 30 times so that you can keep the covid away' },
-    { name: 'wear a mask', value: 'with a mask we can reduce the spread of covid. use a N-95 mask (Preferably) which does 95% of removal'},
+    { name: 'wear a mask', value: 'with a mask we can reduce the spread of covid. use a N-95 mask, which is 95% of Effecitive against the spread of covid'},
     { name: 'Have a sanitizer all the time and use it properly', value:'Do as i say and you will survive this pandemic'}
     )
     .setURL('https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public')
