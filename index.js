@@ -84,7 +84,7 @@ client.on('message', async (msg) => {
     if(msg.content.includes('negative')||msg.content.includes('-ve')){
       msg.channel.send('i am glad to hear that your fine. stay safe, use these precautions',precautions)
     }else if(msg.content.includes('positive')||msg.content.includes('+ve')){
-      msg.channel.send('do you have other health issues like High BP, Low BP, kidney problem, diabetes, etc', prescriction)
+      msg.channel.send('do you have other health issues like High BP, Low BP, kidney problem, diabetes, etc'+' \pIf yes then take those medicine and this ones', prescriction)
     }
 
     if(msg.content.includes('become donor')){
